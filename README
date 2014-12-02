@@ -1,5 +1,7 @@
 Android Port of glTRON -
 
+Forked to show an example of how to implement the MoreGamers.com banner exchange.
+
 INTRODUCTION
 ============
 This project was undertaken by myself (Iain Churcher) to learn both android and openGL ES programming.
