@@ -160,7 +160,7 @@ public class HUD {
 			xenoTron.drawText(
 					5, 
 					Visual._vp_h / 2, 
-					(Visual._vp_w / (6 / 4 * str.length())), 
+					((Visual._vp_w / 2) / (6 / 4 * str.length())), 
 					str);
 		}
 		
@@ -180,14 +180,14 @@ public class HUD {
 			
 			xenoTron.drawText(
 					5,
-					Visual._vp_h / 4,
-					(Visual._vp_w / (6 / 4 * str1.length())),
+					Visual._vp_h / 2,
+					((Visual._vp_w / 2) / (6 / 4 * str1.length())),
 					str1);
 			
 			xenoTron.drawText(
 					5,
-					Visual._vp_h / 8,
-					(Visual._vp_w / (6/4 * str2.length())),
+					Visual._vp_h / 4,
+					((Visual._vp_w / 2) / (6/4 * str2.length())),
 					str2);
 					
 		}
