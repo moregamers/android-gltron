@@ -30,6 +30,8 @@ import android.view.KeyEvent;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.moregamers.MoreGamers;
+
 public class glTron extends Activity {
     /** Called when the activity is first created. */
 	private OpenGLView _View;
@@ -54,6 +56,13 @@ public class glTron extends Activity {
         _View = new OpenGLView(this, width, height);
         setContentView(_View);
 
+	MoreGamers.init(this, 5140);
+	MoreGamers.banner(
+		(int)(width - (height * 0.9)),
+		(int)(height * 0.1),
+		(int)(height * 0.8),
+		(int)(height * 0.8)
+	);
     }
     
     

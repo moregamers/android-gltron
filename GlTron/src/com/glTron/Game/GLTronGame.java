@@ -36,6 +36,7 @@ import com.glTron.Sound.SoundManager;
 import com.glTron.Video.*;
 import com.glTron.Video.Lighting.LightType;
 
+import com.moregamers.MoreGamers;
 
 public class GLTronGame {
 
@@ -303,6 +304,7 @@ public class GLTronGame {
 				
 				tronHUD.displayInstr(false);
 				boInitialState = false;
+				MoreGamers.hide();
 			}
 			else
 			{
@@ -584,11 +586,23 @@ public class GLTronGame {
 			if(!boOwnPlayerActive && boOtherPlayersActive)
 			{
 				tronHUD.displayLose();
+				MoreGamers.banner(
+					(int)(Visual.GetWidth() - (Visual.GetHeight() * 0.9)),
+					(int)(Visual.GetHeight() * 0.1),
+					(int)(Visual.GetHeight() * 0.8),
+					(int)(Visual.GetHeight() * 0.8)
+				);
 			}
 			else if(boOwnPlayerActive && !boOtherPlayersActive)
 			{
 				tronHUD.displayWin();
 				Players[OWN_PLAYER].setSpeed(0.0f);
+				MoreGamers.banner(
+					(int)(Visual.GetWidth() - (Visual.GetHeight() * 0.9)),
+					(int)(Visual.GetHeight() * 0.1),
+					(int)(Visual.GetHeight() * 0.8),
+					(int)(Visual.GetHeight() * 0.8)
+				);
 			}
 		}
 
